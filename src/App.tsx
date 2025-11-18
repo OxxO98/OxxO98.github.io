@@ -51,7 +51,7 @@ const App = () => {
                     <HotkeysProvider initiallyActiveScopes={['settings']}>
                         <BrowserRouter>
                                 <Routes>
-                                    <Route path="/shared" element={<SharedPage/>}/>
+                                    <Route path="/" element={<SharedPage/>}/>
                                     <Route path="*" element={<NotFoundPage/>}/>
                                 </Routes>
                         </BrowserRouter>
