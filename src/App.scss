@@ -1,0 +1,181 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+//koFont
+@font-face {
+  font-family: 'Aggravo';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SBAggroB.woff') format('woff');
+  font-weight: 700;
+  font-display: swap;
+}
+@import url('https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css'); 
+@import url('http://fonts.googleapis.com/earlyaccess/nanumgothic.css');
+@font-face {
+    font-family: 'OneStoreMobilePop';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/ONE-Mobile-POP.woff') format('woff');
+    font-weight: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'RoundedFixedsys';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/DungGeunMo.woff') format('woff');
+    font-weight: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'KyoboHandwriting2019';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@1.0/KyoboHand.woff') format('woff');
+    font-weight: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'InkLiquid';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/InkLipquid.woff') format('woff');
+    font-weight: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'DnfBitbeatV2';
+    src: url('//cdn.df.nexon.com/img/common/font/DNFBitBitv2.otf')format('opentype');
+    font-weight: 400;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'OngleipWFontList';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2501-1@1.1/Ownglyph_wiseelist-Rg.woff2') format('woff2');
+    font-weight: normal;
+    font-display: swap;
+}
+
+//jaFont
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=BIZ+UDPGothic:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sawarabi+Gothic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rampart+One&display=swap'); //"Rampart One"
+@import url('https://fonts.googleapis.com/css2?family=DotGothic16&display=swap'); //"DotGothic16"
+@import url('https://fonts.googleapis.com/css2?family=Zen+Kurenaido&display=swap'); //"Zen Kurenaido"
+
+$primary-color : 	oklch(40.233% 0.14406 26.637);
+
+*{
+  -ms-overflow-style: none;
+  &::selection{
+    color: white;
+    background-color: $primary-color;
+  }
+ 
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+iframe {
+  border: none;
+  overflow: hidden;
+}
+
+.rubyAri{
+  // font-family: 'Noto Sans JP', sans-serif;
+  // font-size: 16px;
+  // font-weight: 400;
+
+  line-height: 32px;
+
+  ruby-align : space-around;
+  ruby-overhang : none;
+
+  margin : 0;
+  padding: 0;
+  rt{
+    font-size: '50%';
+
+    margin : 0;
+    padding: 0;
+    user-select: none;
+    //@include defaultBorder(1px);
+  }
+  //@include defaultBorder(1px);
+}
+
+.rubyNasi{
+  // font-family: 'Noto Sans JP', sans-serif;
+  // font-size: 16px;
+  // font-weight: 400;
+
+  margin: 0;
+  padding: 0;
+}
+
+.bun{
+  font-size: 16px;
+}
+
+.highlight {
+  position: relative;
+  font-family: 'Noto Sans JP', sans-serif;
+
+  //color:$white;
+  //font-weight: bold;
+  z-index: 0;
+
+  rt{
+    //color: $black;
+    position: relative;
+    z-index: 0;
+    user-select: none;
+  }
+  &::before {
+    content: '';
+    position: absolute;
+    height: 80%;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    background-color: $primary-color;
+  }
+  //box-shadow: inset 0 -16px 0 hsla(0, 90%, 83%, 0.93);
+}
+
+.bold {
+  font-family: 'Noto Sans JP', sans-serif;
+  font-weight: 700;
+}
