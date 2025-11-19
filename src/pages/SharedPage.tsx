@@ -293,7 +293,7 @@ const SharedTimelineCarouselComp = ({ timeline, playerRef, state, playerHandles 
         position : 'absolute',
         margin : 'auto',
         backgroundColor : backgroundColor,
-        transform : `translate(-50%, 0)`
+        transform : `translate(-50%, -100%)`
     }
 
     const textShadow = fontShadow ? '-1px 0px black, 0px 1px black, 1px 0px black, 0px -1px black' : '';
@@ -322,7 +322,7 @@ const SharedTimelineCarouselComp = ({ timeline, playerRef, state, playerHandles 
 
     const boxStyle = useMemo( () => {
         return {
-            bottom : `${boxHeight}px`,
+            bottom : `${boxHeight+70}px`,
             left : `50%`
         }
     }, [boxHeight])
