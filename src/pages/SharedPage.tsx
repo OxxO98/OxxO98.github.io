@@ -288,11 +288,12 @@ const SharedTimelineCarouselComp = ({ timeline, playerRef, state, playerHandles 
     const { backgroundColor, jaTextColor, koTextColor,  jaTextFontSize, koTextFontSize, jaFontFamily, koFontFamily, sortFont, fontShadow, jaFontWeight, koFontWeight } = useSelector( (_state : RootState) => _state.shared );
 
     const TimelineBunStyle : CSSProperties = {
-        width : 'fit-content',
+        width : '100%',
         textAlign : 'center',
-        position : 'relative',
+        position : 'absolute',
         margin : 'auto',
-        backgroundColor : backgroundColor
+        backgroundColor : backgroundColor,
+        transform : `translate(-50%, 0)`
     }
 
     const textShadow = fontShadow ? '-1px 0px black, 0px 1px black, 1px 0px black, 0px -1px black' : '';
@@ -321,7 +322,8 @@ const SharedTimelineCarouselComp = ({ timeline, playerRef, state, playerHandles 
 
     const boxStyle = useMemo( () => {
         return {
-            top : `-${boxHeight+70}px`
+            bottom : `${boxHeight}px`,
+            left : `50%`
         }
     }, [boxHeight])
     
